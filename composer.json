@@ -23,7 +23,8 @@
         "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
         "laminas/laminas-eventmanager": "^3.13.1",
         "mezzio/mezzio-authentication": "^1.10.0",
-        "mezzio/mezzio-authorization": "^1.10.0"
+        "mimmi20/mezzio-generic-authorization": "^3.0.7",
+        "mimmi20/mezzio-generic-authorization-acl": "^3.0.4"
     },
     "require-dev": {
         "axleus/axleus-debug": "dev-master",
