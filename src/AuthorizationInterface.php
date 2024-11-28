@@ -6,9 +6,10 @@ namespace Axleus\Authorization;
 
 use Laminas\Permissions\Acl\Resource\ResourceInterface;
 use Laminas\Permissions\Acl\Assertion\AssertionInterface;
+use Mimmi20\Mezzio\GenericAuthorization\AuthorizationInterface as baseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-interface AuthorizationInterface
+interface AuthorizationInterface extends baseInterface
 {
     /**
      * Check if a role is granted for a resource
