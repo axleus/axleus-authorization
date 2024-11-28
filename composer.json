@@ -23,6 +23,8 @@
         "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
         "laminas/laminas-eventmanager": "^3.13.1",
         "mezzio/mezzio-authentication-session": "^1.9",
+        "mezzio/mezzio-session": "^1.16.0",
+        "mezzio/mezzio-session-ext": "^1.20.0",
         "mimmi20/mezzio-generic-authorization": "^3.0.7",
         "mimmi20/mezzio-generic-authorization-acl": "^3.0.4"
     },
