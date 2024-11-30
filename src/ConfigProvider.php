@@ -25,9 +25,6 @@ final class ConfigProvider
                 'User'          => ['Guest'],
                 'Administrator' => ['User'],
             ],
-            'resources' => [
-                'home',
-            ],
             // 'allow' => [
             //     'User'  => [
             //         'logout',

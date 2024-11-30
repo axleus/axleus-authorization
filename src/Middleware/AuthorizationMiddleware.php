@@ -74,9 +74,10 @@ final class AuthorizationMiddleware implements MiddlewareInterface
         }
         $roles     = [];
 
-        foreach ($user->getRoles() as $role) {
-            $roles[] = $role;
-        }
+        // foreach ($user->getRoles() as $role) {
+        //     $roles[] = $role;
+        // }
+        $roles = $user->getRoles();
 
         if (count($roles)) {
             foreach ($roles as $role) {
