@@ -4,16 +4,14 @@ declare(strict_types=1);
 
 namespace Axleus\Authorization;
 
-// use Mimmi20\Mezzio\GenericAuthorization\AuthorizationInterface;
-
 final class ConfigProvider
 {
     public function __invoke(): array
     {
         return [
-            'dependencies'              => $this->getDependencies(),
-            'filters'                   => $this->getFilters(),
-            'mezzio-authorization-acl'  => $this->getAuthorizationConfig(),
+            'dependencies'             => $this->getDependencies(),
+            'filters'                  => $this->getFilters(),
+            'mezzio-authorization-acl' => $this->getAuthorizationConfig(),
         ];
     }
 
@@ -25,17 +23,6 @@ final class ConfigProvider
                 'User'          => ['Guest'],
                 'Administrator' => ['User'],
             ],
-            // 'allow' => [
-            //     'User'  => [
-            //         'logout',
-            //         'account.read',
-            //     ],
-            // ],
-            // 'deny' => [
-            //     'User' => [
-            //         'login'
-            //     ],
-            // ],
         ];
     }
 
